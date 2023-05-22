@@ -5,17 +5,19 @@ body{
 
     margin: 0;
     font-family: 'Archivo Black', sans-serif;
+    background: #02021B;
+
 }
 
-body *{
+*{
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .main-login{
     /* Definindo as propriedades da main */
     width:100vw;  
     height: 100vh;
-    background: #02021B;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -127,4 +129,53 @@ body *{
     background-color: rgb(255, 255, 255);
 }
 
+@media (max-width: 768px){
+    .main-login{
+        flex-direction: column-reverse;
+        width: 100%;
+        height:100%;
+        margin: 20px 5px;
+    }
+    .left-login{
+        width: 80%;
+        height: 100% ;
+        margin: 20px;
+    }
+    .img-login{
+        width:60vw;
+     }
+    .rigth-login{
+        margin:20px;
+        width: 80%;
+        height: 100%;
+    }
+    /* Card login */
+    .card-login{
+        padding-bottom: 20px;
+        width: 60vw;
+        
+    }
+}
 
+
+@media (max-width: 420px){
+    .left-login{
+        width: 90%;
+        height: 100% ;
+        margin: 20px;
+    }
+    .img-login{
+        width:80vw;
+     }
+    .rigth-login{
+        margin:20px;
+        width: 90%;
+        height: 100%;
+    }
+    /* Card login */
+    .card-login{
+        padding-top: 20px;
+        width: 80vw;
+        
+    }
+}
